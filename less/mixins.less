@@ -35,3 +35,20 @@
 		background-color: @color;
 	}
 }
+
+.fullbackground(@url, @offsetLeft: 0, @offsetTop: 0) {
+	background-color: @brand-success;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(@url);
+	background-position: @offsetLeft @offsetTop;
+}
+
+.lightHeadlines(){
+	color: @brand-success;
+	border-color: @brand-success;
+	-webkit-text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+	-moz-text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+	-o-text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+	text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+}

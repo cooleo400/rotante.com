@@ -84,11 +84,12 @@ hr.star-primary:after {
 
 header {
 	text-align: center;
-	background: @brand-success;
+	.fullbackground('../img/profile_large.jpg', 0, 0); 
 	color: @brand-primary;
+
 	.container {
-		padding-top: 100px;
-		padding-bottom: 50px;
+		padding-top: 150px;
+		padding-bottom: 100px;
 	}
 	img {
 		width: 90%;
@@ -104,7 +105,8 @@ header {
 			font-family: @font;
 			text-transform: uppercase;
 			font-weight: 700;
-			font-size: 2em;
+			font-size: 4em;
+			.lightHeadlines();
 		}
 		.skills {
 			font-size: 1.25em;
@@ -115,9 +117,10 @@ header {
 
 @media(min-width:768px) {
 	header {
+		// .fullbackground('../img/profile_large.jpg', 0, 0); 
 		.container {
 			padding-top: 300px;
-			padding-bottom: 100px;
+			padding-bottom: 200px;
 		}
 		.intro-text {
 			.name {
@@ -258,7 +261,9 @@ section.success {
 }
 
 #about {
-	// h2 { color: @brand-primary; }
+	background-image: url(../img/profile2_large.jpg);
+	background-size: cover;
+	h2 {  }
 
 	img { width: 100%; max-width: 400px; margin: 0 auto 25px; display: block; }
 }
